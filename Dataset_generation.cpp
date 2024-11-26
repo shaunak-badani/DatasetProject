@@ -73,14 +73,14 @@ int main()
     std::ofstream csvfile;
     csvfile.open ("trajectory.csv");
 
-    int numSteps = 100;
-    float timeStep = 0.1;
+    int numSteps = 1000;
+    float timeStep = 0.01;
     float totalTime = timeStep * numSteps;
     float lambda = 5;
     BrownianSystem system(k, beta, gamma, lambda / totalTime);
     std::default_random_engine generator;
     std::normal_distribution<double> distribution(0.0,1.0);
-    float numTrajectories = 100000;
+    float numTrajectories = 10000;
 
     for(int i = 0 ; i <= numSteps ; i++)
         csvfile << "x_" << i << ",";

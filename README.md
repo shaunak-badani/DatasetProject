@@ -6,7 +6,7 @@
 
     The problem we're trying to solve is determining the arrow of time from a given time-series data of the particle in motion. Given a trajectory, can I determine if it is a forward trajectory (state A to state B), or if it is a backward trajectory (state B to state A)?
 
-![Image](./Visual_representation.png)
+![Image](./images/Visual_representation.png)
 
     This dataset, once generated, could be used for a variety of different analyses, such as understanding the Crook's Fluctuation theorem. The methods to generate the dataset, along with the dataset, can give the necessary tools for someone interested to work on this problem with little to no domain knowledge of molecular dynamics and statistical mechanics.
 
@@ -23,11 +23,18 @@
 | w      | Work done in moving the particle from the start position to the end position.      |
 | isForward | Denotes if the trajectory is a forward trajectory or a backward trajectory.     | 
 
+### How to run data generation script:
+
+```bash
+g++ Dataset_generation.cpp -o brownian_gen
+./brownian_gen
+```
+
 ### Power analysis results
 
 Power analysis was conducted on a graph denoting the histograms of forward and backward trajectories.
 
-$
+$$
 \begin{align}
     M_1 &\approx 2.5 \\        
     M_2 &\approx -2.5 \\
@@ -37,9 +44,9 @@ $
     effect\_size &= 5 / 1.833 \\
     &= 2.7277
 \end{align}
-$
+$$
 
-![Power analysis](./Power_analysis_distributions.png)
+![Power analysis](./images/Power_analysis_distributions.png)
 
 
 ### Exploratory data analysis
