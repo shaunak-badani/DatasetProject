@@ -13,8 +13,8 @@
 
 ### Description of data
 
-    There are `1002` columns in this dataset.
-    The first 1000 columns denote the position of the particle at that timestep. 
+    There are `1003` columns in this dataset.
+    The first 1001 columns denote the position of the particle - ith column denotes position of the particle at timestep i. 
     The next two columns are `w`, the work done in moving the particle from the start position to the end position, and `isForward`, denoting if the trajectory is a forward trajectory or a backward trajectory.
 
 | Column Name     | Description           | 
