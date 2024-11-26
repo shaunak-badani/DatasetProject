@@ -9,7 +9,8 @@
 ![Image](./images/Visual_representation.png)
 
     This dataset, once generated, could be used for a variety of different analyses, such as understanding the Crook's Fluctuation theorem. The methods to generate the dataset, along with the dataset, can give the necessary tools for someone interested to work on this problem with little to no domain knowledge of molecular dynamics and statistical mechanics.
-
+    Furthermore, the analysis of this dataset could help identify potential theorems in statistical mechanics using machine learning techniques.
+    For instance, the crook's fluctuation theorem was developed after ML methods, which shows that the problem that the dataset solves could have been solved earlier without the knowledge of the theorem.
 
 ### Description of data
 
