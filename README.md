@@ -48,17 +48,17 @@ Exploratory data analysis has been conducted and the analysis can be found on `D
 
 A plot showing one of the forward trajectories of the particle:
 
-![Forward trajectory](./anim0.gif)
+![Forward trajectory](./images/anim0.gif)
 
 The moving parabola is the harmonic energy function as a function of the x-coordinate of the particle. The center of the harmonic well moves with a constant speed in the x-direction.
 
 Backward trajectory:
 
-![Backward trajectory](./anim1.gif)
+![Backward trajectory](./images/anim1.gif)
 
 The forward and backward work distributions as plotted in the original paper has also been done in the analysis notebook. The graph is shown below:
 
-![Work distributions](./work_distribution_graph.png)
+![Work distributions](./images/work_distribution_graph.png)
 
 The above graph can be explained with the crook's fluctuation theorem. The theorem simply states the following relation:
 
