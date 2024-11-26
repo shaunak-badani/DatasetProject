@@ -23,7 +23,7 @@
 | w      | Work done in moving the particle from the start position to the end position.      |
 | isForward | Denotes if the trajectory is a forward trajectory or a backward trajectory.     | 
 
-### How to run data generation script:
+### How to run data generation script
 
 ```bash
 g++ Dataset_generation.cpp -o brownian_gen
@@ -41,13 +41,14 @@ $$
     3 * \sigma &\approx 5.5 \\
     \sigma &\approx 1.833 \\
     combined_\sigma &\approx 1.833 \\
-    effect\_size &= 5 / 1.833 \\
+    effect\_{size} &= 5 / 1.833 \\
     &= 2.7277
 \end{align}
 $$
 
 ![Power analysis](./images/Power_analysis_distributions.png)
 
+But the author of the paper mentions that the number of trajectories that were generated during the research was 10000, for both forward and backward trajectories, so that was the number used for curation of this dataset as well.
 
 ### Exploratory data analysis
 
@@ -69,13 +70,13 @@ The forward and backward work distributions as plotted in the original paper has
 
 The above graph can be explained with the crook's fluctuation theorem. The theorem simply states the following relation:
 
-$
+$$
 \begin{align}
     \frac{\rho_F(w)}{\rho_B(-w)} = e^{w - \Delta F}
 \end{align}
-$
+$$
 
-When $ w = \Delta F $, the RHS becomes 1, and that's when the forward and backward distributions meet. For this particular example, since it's only the harmonic potential centers that shift, the free energy difference between the two states (State A:  $\lambda = 0$ State B: $\lambda = 5$) is zero. So the two probability distributions should intersect at 0, which is shown.
+When $w = \Delta F$, the RHS becomes 1, and that's when the forward and backward distributions meet. For this particular example, since it's only the harmonic potential centers that shift, the free energy difference between the two states (State A:  $\lambda = 0$ State B: $\lambda = 5$) is zero. So the two probability distributions should intersect at 0, which is shown.
 
 ### Link to public dataset
 
