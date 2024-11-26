@@ -4,6 +4,14 @@
 #include <random>
 #include <fstream>
 
+/**
+ * This class defines the system to be used for the simulation
+ * It takes a number of parameters:
+ * k -> Spring constant of the potential well
+ * beta -> 1 / (kB * T), a thermodynamic variable inversely proportional to temperature.
+ * gamma -> constant
+ * u -> rate of change of center of harmonic potential
+ */
 class BrownianSystem
 {
     private:
@@ -74,7 +82,6 @@ int main()
     std::normal_distribution<double> distribution(0.0,1.0);
     float numTrajectories = 100000;
 
-    // csvfile << "index,";
     for(int i = 0 ; i <= numSteps ; i++)
         csvfile << "x_" << i << ",";
 
@@ -95,6 +102,7 @@ int main()
     }
 
     BrownianSystem system2(k, beta, gamma, -lambda / totalTime);
+
     // Generating backward trajectories
     for(int trajNo = 0 ; trajNo < numTrajectories ; trajNo++)
     {
