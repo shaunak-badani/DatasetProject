@@ -23,6 +23,13 @@
 | w      | Work done in moving the particle from the start position to the end position.      |
 | isForward | Denotes if the trajectory is a forward trajectory or a backward trajectory.     | 
 
+### How to run data generation script:
+
+```bash
+g++ Dataset_generation.cpp -o brownian_gen
+./brownian_gen
+```
+
 ### Power analysis results
 
 Power analysis was conducted on a graph denoting the histograms of forward and backward trajectories.
